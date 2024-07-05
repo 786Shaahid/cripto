@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coin Details - Crypto Tracker</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Coin Details</h1>
+        <a href="index.html">Home</a>
+        <a href="favorites.html">Favorites</a>
+    </header>
+    <main>
+        <div id="coin-details"></div>
+        <canvas id="price-chart" width="400" height="200"></canvas>
+        <div>
+            <button onclick="fetchChart('1')">24h</button>
+            <button onclick="fetchChart('30')">30d</button>
+            <button onclick="fetchChart('90')">3m</button>
+        </div>
+    </main>
+    <script src="coins.js"></script>
+</body>
+</html>
